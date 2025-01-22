@@ -8,9 +8,15 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        schabo: ["SCHABO", "sans-serif"],
+        comedik: ["Comedik", "sans-serif"],
+      },
+      fontSize: {
+        customSize: ["28.8px", "25.92px"], // Font size with line height
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        customBlue: "#020037",
       },
     },
   },
