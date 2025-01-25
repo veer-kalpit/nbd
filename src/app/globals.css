@@ -1,11 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Comedik&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   background: black;
+}
+@font-face {
+  font-family: "Object Sans";
+  src: url("/ObjectSans-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {

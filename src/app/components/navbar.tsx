@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../../../public/next.svg";
-import Join from "../components/join";
+import Join from "./Nav-joinB";
 import Link from "next/link";
 
 const links = [

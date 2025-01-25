@@ -11,12 +11,15 @@ export default {
       fontFamily: {
         schabo: ["SCHABO", "sans-serif"],
         comedik: ["Comedik", "sans-serif"],
+        objectSans: ["Object Sans", "sans-serif"],
       },
       fontSize: {
-        customSize: ["28.8px", "25.92px"], // Font size with line height
+        customSize: ["28.8px", "25.92px"],
+        base: ["16.5px", "24.75px"],
       },
       colors: {
         customBlue: "#020037",
+        lightBlue: "#B5F1FF",
       },
     },
   },
