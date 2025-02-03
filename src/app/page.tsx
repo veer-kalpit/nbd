@@ -3,6 +3,7 @@ import Banner from "./components/banner";
 import Navbar from "./components/navbar";
 import AboutUs from "./components/aboutUs";
 import MeetTheTeam from "./components/MeetTheTeam";
+import OurExcellence from "./components/OurExcellence";
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
       <Banner />
       <AboutUs />
       <MeetTheTeam />
+      <OurExcellence />
     </div>
   );
 };

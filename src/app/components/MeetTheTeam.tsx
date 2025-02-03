@@ -97,7 +97,7 @@ const TeamPage = () => {
       </div>
 
       {/* Profile Details */}
-      <section className="flex flex-row items-center mt-[48.8px] gap-[30px] ">
+      <section className="flex lg:flex-row   items-center mt-[48.8px] gap-[30px] ">
         <Image
           src={currentMember.imageM}
           alt={currentMember.name}
