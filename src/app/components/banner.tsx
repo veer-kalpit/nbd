@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import BgGroup from "../../../public/Bg-group.png";
 import Group from "../../../public/group.png";
@@ -15,34 +15,46 @@ export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animation, setAnimation] = useState("");
 
-  const handlePrev = () => {
-    setAnimation("animate__backOutUp"); // Exit animation
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === 0 ? bannerData.length - 1 : prevIndex - 1
-      );
-      setAnimation("animate__backInUp"); // Entry animation
-    }, 500); // Matches Animate.css fade-out duration
-  };
+  // const handlePrev = () => {
+  //   setAnimation("animate__backOutUp"); // Exit animation
+  //   setTimeout(() => {
+  //     setCurrentIndex((prevIndex) =>
+  //       prevIndex === 0 ? bannerData.length - 1 : prevIndex - 1
+  //     );
+  //     setAnimation("animate__backInUp"); // Entry animation
+  //   }, 500); // Matches Animate.css fade-out duration
+  // };
 
-  const handleNext = () => {
-    setAnimation("animate__backOutDown"); // Exit animation
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % bannerData.length);
-      setAnimation("animate__backInDown"); // Entry animation
-    }, 500); // Matches Animate.css fade-out duration
-  };
+  // const handleNext = () => {
+  //   setAnimation("animate__backOutDown"); // Exit animation
+  //   setTimeout(() => {
+  //     setCurrentIndex((prevIndex) => (prevIndex + 1) % bannerData.length);
+  //     setAnimation("animate__backInDown"); // Entry animation
+  //   }, 500); // Matches Animate.css fade-out duration
+  // };
+   useEffect(() => {
+     const interval = setInterval(() => {
+       setAnimation("animate__backOutUp"); // Exit animation
+
+       setTimeout(() => {
+         setCurrentIndex((prevIndex) => (prevIndex + 1) % bannerData.length);
+         setAnimation("animate__backInUp"); // Entry animation
+       }, 500); // Match this timeout with animation duration
+     }, 3000); // Change image every 3 seconds
+
+     return () => clearInterval(interval); // Cleanup interval on component unmount
+   }, [currentIndex]);
 
   return (
     <div className="flex flex-col lg:flex-row gap-10 lg:gap-[50px] mx-5 lg:mx-[163px] mt-10 lg:mt-[150px] bg-cover bg-center justify-center">
-      <button
+      {/* <button
         onClick={handlePrev}
         className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 hover:bg-gray-700 text-white px-3 py-2 rounded-full"
       >
         &lt;
-      </button>
+      </button> */}
       {/* Image Section */}
-      <div className="relative w-full lg:w-[683.099px] h-[455.455px]">
+      <div className="relative  lg:w-[683.099px] h-[227.728px] w-full lg:h-[455.455px] overflow-hidden">
         <Image src={BgGroup} alt="Background Group" />
 
         <div
@@ -56,19 +68,17 @@ export default function Home() {
             height={455}
           />
         </div>
-
-        {/* Navigation Buttons */}
       </div>
 
       {/* Text Section */}
-      <div className="flex flex-col gap-5 lg:gap-[50px] w-[359px]">
+      <div className="flex flex-col gap-5 lg:gap-[50px] w-auto lg:w-[359px]">
         <div>
-          <h1 className="text-[#B5F1FF] font-schabo text-[40px] lg:text-[60px] font-normal uppercase">
-            &quot;Fueling Dreams, <br />
-            Building Champions, <br />
+          <h1 className="text-[#B5F1FF] font-schabo text-[30px] text-center lg:text-left lg:text-[60px] font-normal uppercase">
+            &quot;Fueling Dreams,
+            Building Champions,
             One Goal at a Time.&quot;
           </h1>
-          <p className="text-[#00A9CF] font-comedik text-[16px] lg:text-[18px] mt-5 ]">
+          <p className="text-[#00A9CF] font-comedik text-[16px] lg:text-[18px] mt-5 text-quote text-center lg:text-left">
             Join our academy today and take the first step <br /> toward your
             football journey to greatness!
           </p>
@@ -77,7 +87,7 @@ export default function Home() {
         {/* Call-to-Action Button */}
         <div className="flex flex-col gap-5">
           {/* Button Background */}
-          <div className="relative w-[299px] h-[56px] flex items-center justify-center  ">
+          <div className="relative lg:w-[299px] lg:h-[56px] flex items-center justify-center  ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="299"
@@ -155,12 +165,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <button
+      {/* <button
         onClick={handleNext}
         className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 hover:bg-gray-700 text-white px-3 py-2 rounded-full"
       >
         &gt;
-      </button>
+      </button> */}
     </div>
   );
 }

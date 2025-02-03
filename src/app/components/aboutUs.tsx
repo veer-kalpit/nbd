@@ -7,14 +7,15 @@ import AboutB from "./About-button";
 
 const AboutUsSection = () => {
   return (
-    <section className=" text-white mx-[163px] relative flex flex-col justify-center items-center mt-[176px]">
+    <section className=" text-white mx-5 lg:mx-[163px] relative flex flex-col justify-center items-center lg:mt-[176px] gap-12">
       {/* Left Section */}
-      <div className="flex gap-[68px]">
-        <div className="w-[39px] h-[39px] mt-[50px]">
+      <div className="flex flex-col lg:flex-row gap-5 lg:gap-[68px]">
+        <div className="w-[39px] h-[39px] mt-[98.5px]  g:mt-[50px]">
           <Image src={Arrow} alt="Button" />
         </div>
 
-        <p className="text-lightBlue font-objectSans text-base w-[702px]">
+        <p className="text-lightBlue font-objectSans text-base lg:w-[702px]">
+          
           Established in 2011, our club embodies resilience, with a primary
           mission to compete at national and India levels, providing a platform
           for players to showcase their talents. Several players have
@@ -24,7 +25,8 @@ const AboutUsSection = () => {
           Under 13 team secured the trophy in the Palghar District, marking a
           significant milestone in our football journey.
         </p>
-        <div className="w-[225px] h-[253px]">
+
+        <div className="w-[225px] h-[253px] self-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="225"
@@ -45,16 +47,16 @@ const AboutUsSection = () => {
       </div>
 
       {/* Right Section */}
-      <div className="flex gap-[44px]">
-        <div className="relative w-[295.396px] h-[420px]">
+      <div className="flex flex-col-reverse lg:flex-row gap-5 lg:gap-[68px]">
+        <div className="relative w-[295.396px] h-[420px] self-center">
           <Image src={BgGoku} alt="Goku" />
           <div className="absolute top-1">
             <Image src={Goku} alt="Goku" />
           </div>
         </div>
         <div className="self-center">
-          <div className="flex gap-8">
-            <p className="text-lightBlue font-objectSans text-base w-[702px] h-[149px] self-center">
+          <div className="flex">
+            <p className="text-lightBlue font-objectSans text-base lg:w-[702px] lg:h-[149px] self-center">
               At Never Back Down Football Club, our vision transcends the
               boundaries of the field, aiming to create a dynamic and inclusive
               environment where the love for football flourishes. Having
@@ -64,11 +66,11 @@ const AboutUsSection = () => {
               global athletics over the past three to four years.
             </p>
           </div>
-          <div className="mt-[84.7px] flex justify-end w-full ">
+          <div className="mt-[84.7px] flex justify-center lg:justify-end w-full mb-[36px] lg:mb-0">
             <AboutB />
           </div>
         </div>
-        <div className="mt-[143px]">
+        <div className="lg:mt-[143px]">
           <Image src={ArrowR} alt="arrow" />
         </div>
       </div>
