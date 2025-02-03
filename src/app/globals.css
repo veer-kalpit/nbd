@@ -18,17 +18,27 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-.carousel-container {
-  width: 100%;
-  max-width: 600px;
-  overflow: hidden;
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-.carousel-content {
-  width: 100%;
-  transition: transform 0.5s ease-in-out;
+.animate-scroll {
+  display: flex;
+  animation: scroll 15s linear infinite;
 }
 
-.carousel-controls button {
-  transition: background-color 0.3s;
+
+.tilted-div {
+  transform: rotate(-4.5deg);
+  transform-origin: center; 
+}
+.tilted-text {
+  transform: rotate(-2.25deg);
+  transform-origin: center; 
 }

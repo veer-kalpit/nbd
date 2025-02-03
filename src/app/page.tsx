@@ -5,6 +5,9 @@ import AboutUs from "./components/aboutUs";
 import MeetTheTeam from "./components/MeetTheTeam";
 import OurExcellence from "./components/OurExcellence";
 
+import Showcase from "./components/showcase";
+
+
 const page = () => {
   return (
     <div>
@@ -13,6 +16,7 @@ const page = () => {
       <AboutUs />
       <MeetTheTeam />
       <OurExcellence />
+      <Showcase />
     </div>
   );
 };

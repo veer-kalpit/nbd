@@ -61,33 +61,191 @@ const TeamPage = () => {
   const currentMember = teamMembers[currentIndex];
 
   return (
-    <div className=" text-white mt-[141px] mx-[173px] justify-center items-center self-center flex flex-col ">
+    <div className=" text-white mt-[128px] lg:mt-[141px] mx-5 lg:mx-[173px] justify-center items-center self-center flex flex-col ">
       {/* Header Section */}
-      <div className="flex gap-[120px] ">
-        <h1 className="text-lightBlue font-schabo text-[60px] font-normal leading-normal uppercase">
-          MEET THE TEAM..
-        </h1>
+      <div className="flex gap-[71px] lg:gap-[120px] lg:flex-row flex-col ">
+        <div className="relative">
+          <div className="relative z-10">
+            <h1 className=" text-lightBlue font-schabo text-[30px] lg:text-[60px] font-normal leading-normal uppercase">
+              MEET THE TEAM..
+            </h1>
+          </div>
+          <div className="absolute lg:-top-5 lg:left-[70px] left-[40px] -top-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 220 140"
+              fill="none"
+              className="w-[96px] h-[61px] lg:w-[220px] lg:h-[140px]"
+            >
+              <g filter="url(#filter0_d_2092_80870)">
+                <mask
+                  id="mask0_2092_80870"
+                  maskUnits="userSpaceOnUse"
+                  x="2"
+                  y="-5"
+                  width="227"
+                  height="141"
+                >
+                  <path
+                    d="M216.36 42.2677C223.307 72.0191 183.816 106.674 128.154 119.67C72.4934 132.667 21.7394 119.085 14.7926 89.3329C7.84567 59.5817 47.3366 24.9274 102.998 11.9306C158.659 -1.0661 209.413 12.5162 216.36 42.2677Z"
+                    stroke="white"
+                    strokeWidth="22.5"
+                    strokeLinecap="round"
+                    strokeDasharray="485.02 25.68"
+                  />
+                </mask>
+                <g mask="url(#mask0_2092_80870)">
+                  <path
+                    d="M76.3895 131.271C57.8625 130.689 38.5994 128.552 21.9974 118.232C11.5451 111.936 4.57269 99.6199 4.77326 85.3609C5.48054 54.8566 30.667 34.1125 52.4472 24.3158C67.4083 17.6865 83.1755 14.134 98.8332 10.997C120.444 7.58353 142.474 5.37882 164.099 8.91293C169.995 9.94186 175.951 11.1501 181.457 13.913C182.677 14.5838 183.909 15.2844 184.887 16.4063C185.146 16.5217 185.258 16.907 185.125 17.1979C184.986 17.4977 184.686 17.5657 184.455 17.4016C182.509 16.9973 180.54 16.7801 178.562 16.6714C166.898 16.1584 155.241 15.1907 143.56 15.3147C134.529 15.5082 125.502 16.1388 116.5 17.1233C102.389 18.6673 88.409 21.5308 74.595 25.4051C61.5723 28.9888 48.7112 34.1894 37.2635 42.6681C28.1337 49.5322 19.7584 58.6091 14.9317 70.3048C9.722 83.7297 11.2162 99.0957 21.6929 107.867C35.3378 118.813 55.3287 121.602 71.5665 122.511C85.0362 123.257 98.5212 121.911 111.886 119.703C127.224 117.146 142.23 112.246 156.832 105.999C165.651 102.294 174.33 97.9025 182.293 91.9715C189.837 86.378 196.251 78.7625 200.888 69.698C207.066 58.7114 207.826 45.0321 200.265 34.8779C198.172 31.6568 201.845 27.6212 204.328 30.3638C205.955 32.3564 207.301 34.6889 208.415 37.1345C212.694 46.309 213.493 57.0008 210.069 66.8666C205.68 79.0085 198.091 89.4222 188.997 96.9042C178.292 105.804 166.006 111.419 153.744 116.341C131.976 125.306 109.059 130.242 86.12 131.141C82.8755 131.268 79.6332 131.313 76.3896 131.28L76.3895 131.271Z"
+                    fill="#181818"
+                  />
+                  <path
+                    d="M79.97 124.887C61.4428 124.302 42.1795 122.162 25.5768 111.84C15.1239 105.542 8.1508 93.2254 8.35049 78.9664C9.05591 48.4626 34.2412 27.7221 56.0208 17.9284C70.9817 11.3013 86.7485 7.75091 102.406 4.61612C124.017 1.20571 146.047 -0.995931 167.673 2.54119C173.568 3.57088 179.525 4.78001 185.031 7.54354C186.251 8.21456 187.483 8.91543 188.461 10.0374C188.721 10.1529 188.832 10.5381 188.7 10.829C188.559 11.1288 188.26 11.1968 188.03 11.0326C186.083 10.6281 184.113 10.4105 182.136 10.3016C170.472 9.78701 158.815 8.81756 147.134 8.94011C138.103 9.13233 129.076 9.76158 120.073 10.745C105.963 12.2869 91.9827 15.1485 78.1689 19.0209C65.1463 22.6026 52.2855 27.8015 40.8384 36.2785C31.7088 43.1413 23.3341 52.2171 18.508 63.912C13.2992 77.3359 14.7943 92.7019 25.2716 101.475C38.9172 112.423 58.9083 115.215 75.1464 116.127C88.616 116.874 102.101 115.529 115.466 113.324C130.804 110.769 145.809 105.871 160.411 99.6259C169.23 95.9224 177.91 91.5319 185.871 85.6024C193.416 80.0089 199.829 72.3951 204.465 63.331C210.643 52.3453 211.402 38.6662 203.84 28.5111C201.747 25.2897 205.419 21.2545 207.903 23.9975C209.529 25.9903 210.876 28.323 211.99 30.7688C216.27 39.9438 217.07 50.6356 213.645 60.5009C209.258 72.6419 201.67 83.0547 192.576 90.5352C181.871 99.4339 169.586 105.048 157.325 109.968C135.556 118.929 112.639 123.863 89.7005 124.758C86.456 124.884 83.2137 124.929 79.97 124.895V124.887Z"
+                    fill="#00A9CF"
+                  />
+                </g>
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d_2092_80870"
+                  x="0.769043"
+                  y="0.740967"
+                  width="219.011"
+                  height="138.549"
+                  filterUnits="userSpaceOnUse"
+                  colorInterpolationFilters="sRGB"
+                >
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_2092_80870"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_2092_80870"
+                    result="shape"
+                  />
+                </filter>
+              </defs>
+            </svg>
+          </div>
+        </div>
 
         {/* Profile Navigation */}
-        <div className="flex justify-center items-center gap-[59px] ">
+        <div className="flex flex-row items-center gap-5 lg:gap-[59px]">
           <button onClick={handlePrev}>
             <Image src={ArrowL} alt="Arrow" />
           </button>
-          <div className="flex gap-[87px]">
+          <div className="flex gap-6 lg:gap-[87px]">
             {teamMembers.map((member, index) => (
-              <Image
+              <div
                 key={member.id}
-                src={member.image}
-                alt={member.name}
-                width={63.57}
-                height={63.57}
-                className={`rounded-full border-2 ${
-                  index === currentIndex
-                    ? "border-[#B5F1FF]"
-                    : "border-transparent"
-                } cursor-pointer`}
+                className="relative w-[63.57px] h-[63.57px] flex items-center justify-center"
                 onClick={() => setCurrentIndex(index)}
-              />
+              >
+                {currentIndex === index && (
+                  <div className="absolute -top-7">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="130"
+                      height="130"
+                      viewBox="0 0 130 130"
+                      fill="none"
+                    >
+                      <g filter="url(#filter0_d_2092_80902)">
+                        <mask
+                          id="mask0_2092_80902"
+                          maskUnits="userSpaceOnUse"
+                          x="17"
+                          y="5"
+                          width="96"
+                          height="120"
+                        >
+                          <path
+                            d="M96.5398 14.6429C111.334 23.931 109.24 53.8977 91.8633 81.5758C74.4868 109.254 48.4071 124.162 33.613 114.873C18.819 105.585 20.9127 75.6187 38.2894 47.9408C55.6661 20.263 81.7456 5.35506 96.5398 14.6429Z"
+                            stroke="white"
+                            strokeWidth="12.8644"
+                            strokeLinecap="round"
+                            strokeDasharray="277.31 14.68"
+                          />
+                        </mask>
+                        <g mask="url(#mask0_2092_80902)">
+                          <path
+                            d="M75.5072 107.119C67.7485 114.338 59.0647 121.222 48.1688 123.711C41.3898 125.36 33.6019 123.164 27.9453 117.292C15.957 104.618 17.8386 86.0574 22.7422 73.3137C26.1509 64.6006 31.1252 56.8127 36.2222 49.2376C43.6259 39.1545 51.6861 29.3938 61.8912 22.1269C64.6998 20.1723 67.6053 18.266 70.9532 17.1725C71.7188 16.9539 72.5012 16.7426 73.3499 16.8047C73.5014 16.7474 73.7019 16.8589 73.765 17.0305C73.829 17.2084 73.7348 17.3564 73.575 17.3827C72.6218 18.0018 71.7345 18.7061 70.8875 19.4578C65.9437 23.9433 60.82 28.2411 56.1256 32.9922C52.5356 36.705 49.1231 40.5937 45.863 44.6163C40.753 50.922 36.2274 57.7108 32.176 64.8434C28.3289 71.5395 25.1982 78.8273 23.9607 86.8777C23.0149 93.3396 23.266 100.397 26.0122 107.089C29.2987 114.638 36.0892 120.278 43.8741 119.624C53.8209 118.579 63.0626 111.667 70.0234 105.502C75.7942 100.384 80.7293 94.4108 85.2693 88.136C90.4697 80.9248 94.5924 72.8964 98.0093 64.4829C100.1 59.4294 101.858 54.1527 102.705 48.5394C103.518 43.2317 103.058 37.5578 101.294 32.0102C99.382 25.0619 94.1861 19.2 87.0287 18.1188C84.8826 17.6526 84.7503 14.5355 86.8625 14.6501C88.3251 14.8048 89.8106 15.2104 91.2471 15.7555C96.6772 17.7595 101.304 21.7806 103.883 27.1657C106.987 33.863 108.096 41.1466 107.413 47.8449C106.646 55.7676 103.916 62.9922 100.917 69.9258C95.6832 82.327 88.362 93.5542 79.407 103.15C78.1403 104.507 76.8415 105.83 75.5109 107.122L75.5072 107.119Z"
+                            fill="#181818"
+                          />
+                          <path
+                            d="M74.3924 103.085C66.6321 110.303 57.9473 117.186 47.0502 119.675C40.2704 121.323 32.4819 119.127 26.8249 113.255C14.836 100.582 16.7186 82.0236 21.6233 69.2813C25.0327 60.5692 30.0077 52.7823 35.1056 45.2081C42.5106 35.1262 50.572 25.3668 60.7786 18.1009C63.5875 16.1465 66.4933 14.2406 69.8416 13.1474C70.6072 12.9289 71.3897 12.7176 72.2385 12.7798C72.3903 12.7222 72.5904 12.834 72.6539 13.0053C72.7176 13.1835 72.6234 13.3315 72.4638 13.3575C71.5102 13.9767 70.6227 14.6809 69.7757 15.4326C64.8315 19.9171 59.7068 24.2145 55.0118 28.965C51.4213 32.6772 48.0082 36.5654 44.7474 40.5878C39.6369 46.8924 35.1105 53.6805 31.0584 60.8122C27.2106 67.5075 24.0793 74.7945 22.8414 82.844C21.8951 89.3052 22.146 96.3615 24.8921 103.053C28.1786 110.602 34.9695 116.241 42.7555 115.588C52.7032 114.543 61.946 107.632 68.908 101.468C74.6793 96.351 79.6151 90.3782 84.156 84.1043C89.3573 76.8941 93.4808 68.8665 96.8981 60.454C98.9894 55.4011 100.748 50.125 101.595 44.5126C102.409 39.2049 101.949 33.5317 100.185 27.9848C98.2729 21.0369 93.0767 15.1754 85.9187 14.0941C83.7722 13.6281 83.64 10.5112 85.7524 10.626C87.2151 10.7807 88.7009 11.1861 90.1375 11.7313C95.5681 13.7353 100.195 17.756 102.775 23.1408C105.878 29.8375 106.987 37.1201 106.304 43.8179C105.537 51.7402 102.806 58.9639 99.8064 65.8963C94.5714 78.2963 87.249 89.5223 78.2925 99.1167C77.0257 100.474 75.7267 101.797 74.3957 103.088L74.3924 103.085Z"
+                            fill="#00A9CF"
+                          />
+                        </g>
+                      </g>
+                      <defs>
+                        <filter
+                          id="filter0_d_2092_80902"
+                          x="15.5395"
+                          y="10.6229"
+                          width="94.3543"
+                          height="118.034"
+                          filterUnits="userSpaceOnUse"
+                          colorInterpolationFilters="sRGB"
+                        >
+                          <feFlood
+                            floodOpacity="0"
+                            result="BackgroundImageFix"
+                          />
+                          <feColorMatrix
+                            in="SourceAlpha"
+                            type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha"
+                          />
+                          <feOffset dy="2.28701" />
+                          <feGaussianBlur stdDeviation="1.1435" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix
+                            type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                          />
+                          <feBlend
+                            mode="normal"
+                            in2="BackgroundImageFix"
+                            result="effect1_dropShadow_2092_80902"
+                          />
+                          <feBlend
+                            mode="normal"
+                            in="SourceGraphic"
+                            in2="effect1_dropShadow_2092_80902"
+                            result="shape"
+                          />
+                        </filter>
+                      </defs>
+                    </svg>
+                  </div>
+                )}
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  width={63.57}
+                  height={63.57}
+                  className="rounded-full cursor-pointer"
+                />
+              </div>
             ))}
           </div>
           <button onClick={handleNext}>
@@ -97,7 +255,7 @@ const TeamPage = () => {
       </div>
 
       {/* Profile Details */}
-      <section className="flex lg:flex-row   items-center mt-[48.8px] gap-[30px] ">
+      <section className="flex lg:flex-row flex-col items-center mt-[48.8px] gap-[30px] ">
         <Image
           src={currentMember.imageM}
           alt={currentMember.name}
@@ -106,16 +264,16 @@ const TeamPage = () => {
           className="rounded-lg"
         />
         <div>
-          <h2 className="text-[40px] text-[#00A9CF] font-normal leading-[37.13px]">
+          <h2 className="text-[40px] text-[#00A9CF] font-normal leading-[37.13px] text-center lg:text-left">
             HELLO, I&apos;M
           </h2>
-          <h1 className="text-[60px] text-[#B5F1FF] font-schabo font-normal uppercase">
+          <h1 className="lg:text-[60px] text-[30px] text-[#B5F1FF] font-schabo font-normal uppercase text-center lg:text-left">
             {currentMember.name}
           </h1>
-          <p className="text-[#B5F1FF] font-object-sans text-[16.5px] font-normal leading-[24.75px] mt-[50px] w-[612.444px]">
+          <p className="text-[#B5F1FF] font-object-sans text-[16.5px] font-normal leading-[24.75px] mt-[32px] lg:mt-[50px] text-center lg:text-left">
             {currentMember.bio}
           </p>
-          <div className="relative mt-[60px]">
+          <div className="relative lg:mt-[60px] mt-[49px] self-center lg:justify-start flex justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="299"
@@ -128,6 +286,7 @@ const TeamPage = () => {
                 fill="#00A9CF"
               />
             </svg>
+            {/* Connect Role */}
             <button className="absolute top-1 flex text-[#020037] font-comedik text-[15px] font-normal leading-[23.63px] py-[17px] left-6 gap-2">
               <span>
                 <svg
@@ -150,7 +309,6 @@ const TeamPage = () => {
               CONNECT WITH {currentMember.role.toUpperCase()}
             </button>
           </div>
-          {/* Connect Button */}
         </div>
       </section>
     </div>
