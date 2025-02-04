@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import ArrowL from "../../../public/arrowR.png";
 import ArrowR from "../../../public/Container.png";
-import RakeshM from "../../../public/RakeshM.png";
+import RakeshM from "../../../public/rakeshM.png"
 
 const TeamPage = () => {
   const teamMembers = [
