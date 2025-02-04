@@ -22,7 +22,7 @@ const Showcase = () => {
 
   return (
     <div>
-      <div className="tilted-div overflow-y-auto scrollbar-hide-x">
+      <div className="tilted-div overflow-hidden scrollbar-hide-x">
         <BannerList />
       </div>
       {/* red text */}

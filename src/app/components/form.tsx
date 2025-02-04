@@ -2,9 +2,9 @@ import React from "react";
 
 export default function KickoffForm() {
   return (
-    <div className="mt-[300px] mx-[174px]">
-      <div className="flex">
-        <div className="mr-[98.93px] ml-[39.07px]">
+    <div className="mt-[300px] lg:mx-[174px] mx-5">
+      <div className="flex lg:flex-row flex-col mx-10 lg:mx-0">
+        <div className="lg:mr-[98.93px] lg:ml-[39.07px] hidden lg:block">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="43"
@@ -65,11 +65,9 @@ export default function KickoffForm() {
             </span>
           </h1>
         </div>
-        <div className="ml-[238px]">
+        <div className="lg:ml-[238px]">
           <p className="text-[#B5F1FF] font-comedik text-[30px] leading-[30.43px] ">
-            WE AIM TO PROVIDE <br />
-            PERSONALIZED INFO <br />
-            AND DETAILS, <br />
+            WE AIM TO PROVIDE PERSONALIZED INFO AND DETAILS,
           </p>
           <div className="flex">
             <div>
@@ -124,10 +122,10 @@ export default function KickoffForm() {
           </div>
         </div>
       </div>
-
-      <form className="mx-[180px]">
+      {/* Form For Lappy */}
+      <form className="lg:mx-[180px] mt-[53px] hidden lg:block ">
         <div className="space-y-6">
-          <div className="flex space-x-4">
+          <div className="flex space-x-2">
             <label
               htmlFor="Name"
               className="text-[#B5F1FF] font-object-sans text-[18px] leading-[27px]"
@@ -153,7 +151,7 @@ export default function KickoffForm() {
               required
             />
           </div>
-          <div className="flex space-x-4">
+          <div className="flex space-x-2">
             <label
               htmlFor="Age"
               className="text-[#B5F1FF] font-object-sans text-[18px] leading-[27px]"
@@ -180,12 +178,12 @@ export default function KickoffForm() {
             />
           </div>
           <div className="flex  flex-col gap-[50px] ">
-            <div>
+            <div className="space-x-2">
               <label
                 htmlFor="Objective"
                 className="text-[#B5F1FF] font-object-sans text-[18px] leading-[27px]"
               >
-                I’d like to join because
+                I&lsquo;d like to join because
               </label>
               <input
                 type="text"
@@ -194,7 +192,7 @@ export default function KickoffForm() {
                 required
               />
             </div>
-            <div>
+            <div className="space-x-2">
               <label
                 htmlFor="Email"
                 className="text-[#B5F1FF] font-object-sans text-[18px] leading-[27px]"
@@ -210,7 +208,7 @@ export default function KickoffForm() {
             </div>
           </div>
         </div>
-        <div className="relative ml-[704px]">
+        <div className="relative lg:ml-[704px] ml-[85px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="223"
@@ -245,6 +243,102 @@ export default function KickoffForm() {
           </button>
         </div>
       </form>
+
+      {/* Form For Mobile */}
+      <div className="mx-5 lg:hidden md:hidden space-y-[30px]">
+        <div className="flex gap-2">
+          <p className="text-[#B5F1FF] font-object-sans text-[18px] leading-[27px]">
+            Hello, my name is
+          </p>
+          <input
+            className="bg-transparent  w-auto focus:outline-none"
+            type="text"
+            placeholder="Name*"
+          />
+        </div>
+        <div className="flex ">
+          <p className="text-[#B5F1FF] font-object-sans text-[18px] leading-[27px]">
+            I&apos;m
+            <input
+              className="bg-transparent pl-2  w-[120px] focus:outline-none"
+              type="number"
+              placeholder="Role*"
+            />
+          </p>
+          <p className="text-[#B5F1FF] font-object-sans text-[18px] leading-[27px]">
+            at age
+            <input
+              className="bg-transparent pl-2 w-[120px] focus:outline-none"
+              type="number"
+              placeholder="Age*"
+            />
+          </p>
+        </div>
+        <div className="flex gap-2">
+          <p className="text-[#B5F1FF] font-object-sans text-[18px] leading-[27px]">
+            in
+          </p>
+          <input
+            className="bg-transparent   focus:outline-none"
+            type="text"
+            placeholder="Location*"
+          />
+        </div>
+
+        <div className="flex flex-row gap-2">
+          <p className="text-[#B5F1FF] font-object-sans text-[18px] leading-[27px]">
+            I&apos;d like to join because
+          </p>
+          <input className="bg-transparent  w-40 focus:outline-none"
+          placeholder="Objective*" />
+        </div>
+
+        <div className="flex flex-row gap-2">
+          <p className="text-[#B5F1FF] font-object-sans text-[18px] leading-[27px]">
+            Please reach me at
+          </p>
+          <input
+            className="bg-transparent  w-40 focus:outline-none"
+            type="email"
+            placeholder="Email*"
+          />
+        </div>
+
+        <div className="relative ml-[85px] ">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="223"
+            height="60"
+            viewBox="0 0 223 60"
+            fill="none"
+          >
+            <path
+              d="M5.43859 6.52258L5.34641 6.5752L5.26599 6.63747C2.36141 8.88638 1.28108 11.5086 0.913167 14.0636C0.662934 15.8014 0.739554 17.6182 0.80864 19.2567C0.837959 19.9519 0.86593 20.6151 0.866981 21.2264C0.878894 27.6006 1.11207 33.9738 1.56479 40.3338C1.6281 41.2197 1.63613 42.2369 1.64501 43.3602C1.64972 43.9577 1.65468 44.5853 1.66832 45.2391C1.70678 47.0826 1.81561 49.0767 2.21051 50.935C2.60255 52.7798 3.29579 54.592 4.59223 56.0111C5.93079 57.4763 7.89898 58.5005 10.6493 58.7044C19.8897 59.3915 31.1684 59.0626 41.2603 58.7683C44.3146 58.6793 47.2602 58.5934 50.0077 58.5398C56.2753 58.4174 61.9049 58.3061 67.4807 58.1959C74.079 58.0655 80.6019 57.9366 88.0171 57.7924C101.676 57.5257 115.347 57.259 129.016 56.9923C142.716 56.7251 156.415 56.4578 170.105 56.1905L204.582 55.5189C209.3 55.4265 213.394 54.5624 216.354 52.4828C219.323 50.3953 220.896 47.2633 221.083 43.0412L221.083 43.0397L222.235 16.0811L222.236 16.0631L222.236 16.045C222.234 13.6841 222.032 10.8613 221.074 8.32732C220.12 5.80078 218.344 3.38614 215.015 2.11417C212.353 1.09551 209.424 0.911595 206.869 0.780703C191.311 -0.0199214 175.698 0.514222 160.19 1.04479C153.369 1.27814 146.569 1.51081 139.802 1.62891L139.79 1.62913L139.779 1.62945C117.143 2.2788 104.536 2.58526 81.9973 2.87288L81.9876 2.873L81.978 2.87322L26.6655 4.10076L26.6553 4.10099L26.6452 4.10132C25.9748 4.12283 25.1034 4.13585 24.0999 4.15085C21.8671 4.18422 18.9804 4.22736 16.1991 4.39554C14.1567 4.51904 12.0865 4.7129 10.2475 5.03125C8.44098 5.34396 6.70038 5.80222 5.43859 6.52258Z"
+              fill="#00A9CF"
+            />
+          </svg>
+          <button
+            type="submit"
+            className="absolute top-4 left-4 gap-[8.31px] flex  text-[#020037] font-comedik text-[26.3px] leading-[23.63px]"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="37"
+                height="38"
+                viewBox="0 0 37 38"
+                fill="none"
+              >
+                <path
+                  d="M21.756 30.723C21.6298 30.7252 21.5032 30.71 21.3821 30.6802C21.1374 30.6409 20.8979 30.5667 20.6691 30.4574C20.2409 30.2616 19.6653 29.8535 19.3571 29.3042C18.8831 28.4587 18.469 27.5976 18.0697 26.7624L18.0131 26.6443C17.4716 25.5502 15.8885 22.3516 15.4876 20.1079C15.3637 20.0811 15.2482 20.0454 15.1412 20.0037C14.3895 19.6973 13.6658 19.3499 12.9652 19.0165L12.8552 18.9632C7.36484 16.4135 6.61393 15.1692 6.61152 14.3735C6.52629 13.1089 8.29988 11.9279 12.3494 10.5447C15.3887 9.50713 18.8734 8.65932 20.1826 8.34028L20.3998 8.2842C21.9003 7.90372 23.4523 7.51366 25.0371 7.18978C25.2917 7.13888 25.5697 7.11079 25.8653 7.10563C26.4508 7.09541 27.0924 7.18004 27.6263 7.33916C28.7168 7.64537 29.4394 8.25709 29.6164 9.02069C29.7236 9.24244 29.8107 9.46744 29.8781 9.71017C30.1312 10.5596 30.1691 11.5753 29.976 12.354C29.576 13.9466 29.1008 15.5027 28.6419 17.0063L28.574 17.2281C26.4651 24.3624 24.6781 28.5608 23.1167 30.0575C22.881 30.3724 22.5259 30.5876 22.114 30.6703C21.9939 30.7014 21.8737 30.7181 21.756 30.7201L21.756 30.723ZM18.3063 19.1004C18.4189 19.2988 18.5256 19.4915 18.6176 19.6642C18.7332 19.8741 18.84 20.0727 18.899 20.1588L18.9166 20.1817L18.9314 20.2075C19.3318 20.9469 19.7438 21.6861 20.1528 22.4253C20.5945 23.219 21.045 24.0301 21.4841 24.8443C21.5 24.7714 21.5133 24.7102 21.5239 24.6577L21.5292 24.6344L21.5346 24.611C21.9006 23.2166 22.2579 21.8106 22.6152 20.4075C23.0693 18.6282 23.5312 16.8022 24.0164 14.9961C22.5252 16.2389 20.1554 18.1272 18.3092 19.1004L18.3063 19.1004ZM11.9547 15.0702C13.4236 15.6776 14.9389 16.3046 16.389 16.9849C16.6742 16.7099 16.9681 16.4405 17.2167 16.2154C17.4429 16.0111 17.6378 15.8335 17.7309 15.736L17.7478 15.7183L17.7647 15.7034C18.5108 15.0284 19.2539 14.3446 19.997 13.6607C20.2597 13.4181 20.5225 13.1753 20.7881 12.9354C19.4554 13.2201 18.1195 13.4961 16.8122 13.7657C15.4192 14.0543 14.0262 14.3429 12.6419 14.6371L12.6018 14.6436C12.4013 14.6703 12.0295 14.7494 11.6033 14.8411C11.5605 14.8505 11.5176 14.86 11.4747 14.8695C11.6366 14.9363 11.7985 15.0032 11.9605 15.0701L11.9547 15.0702Z"
+                  fill="#020037"
+                />
+              </svg>
+            </span>
+            Get Trained
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
