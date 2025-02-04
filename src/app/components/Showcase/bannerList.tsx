@@ -32,7 +32,7 @@ const data = [
 
 const BannerList = () => {
   return (
-    <div className="w-full h-[187.967px] bg-[#00A9CF] mt-20 overflow-hidden">
+    <div className="w-full h-[187.967px] bg-[#00A9CF] mt-20 overflow-y-auto scrollbar-hide-x">
       {/* Wrapper for scrolling */}
       <div className="flex animate-scroll">
         {/* Map over the data array */}

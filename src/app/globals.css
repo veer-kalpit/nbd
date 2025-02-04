@@ -42,3 +42,14 @@ body {
   transform: rotate(-2.25deg);
   transform-origin: center; 
 }
+@layer utilities {
+  .scrollbar-hide-x {
+    overflow-x: hidden; /* Hides horizontal scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  .scrollbar-hide-x::-webkit-scrollbar {
+    height: 0; /* Chrome, Safari, Opera */
+    display: none;
+  }
+}

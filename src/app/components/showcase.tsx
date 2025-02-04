@@ -22,7 +22,7 @@ const Showcase = () => {
 
   return (
     <div>
-      <div className="tilted-div">
+      <div className="tilted-div overflow-y-auto scrollbar-hide-x">
         <BannerList />
       </div>
       {/* red text */}
@@ -135,7 +135,7 @@ const Showcase = () => {
             />
           </svg>
         </div>
-        <div className="absolute top-36 right-[440px] z-30 tilted-text">
+        <div className="absolute top-36 right-[440px] tilted-text">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="77"
