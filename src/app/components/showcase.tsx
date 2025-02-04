@@ -133,7 +133,7 @@ const Showcase = () => {
             />
           </svg>
         </div>
-        <div className="absolute top-36 right-[440px] tilted-text">
+        <div className="absolute top-36 right-[440px] tilted-text hidden lg:block">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="77"

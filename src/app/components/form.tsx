@@ -2,7 +2,7 @@ import React from "react";
 
 export default function KickoffForm() {
   return (
-    <div className="mt-[350px] lg:mx-[174px] mx-5">
+    <div className="mt-[350px] lg:mx-[174px] lg:mb-[122px] mb-[33.51px] mx-5">
       <div className="flex lg:flex-row flex-col mx-10 lg:mx-0">
         <div className="lg:mr-[98.93px] lg:ml-[39.07px] hidden lg:block">
           <svg
@@ -20,8 +20,8 @@ export default function KickoffForm() {
         </div>
         <div>
           <h1 className="text-[#B5F1FF] font-schabo text-[105px] leading-[94.5px] uppercase flex z-30 relative">
-            READY TO  KICKOFF
-            <span className="mt-[82px] -ml-[290px]">
+            READY TO KICKOFF
+            <span className="mt-[82px]  absolute right-0 lg:right-[120px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="90"
@@ -289,8 +289,10 @@ export default function KickoffForm() {
           <p className="text-[#B5F1FF] font-object-sans text-[18px] leading-[27px]">
             I&apos;d like to join because
           </p>
-          <input className="bg-transparent  w-40 focus:outline-none"
-          placeholder="Objective*" />
+          <input
+            className="bg-transparent  w-40 focus:outline-none"
+            placeholder="Objective*"
+          />
         </div>
 
         <div className="flex flex-row gap-2">

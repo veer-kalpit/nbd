@@ -6,6 +6,7 @@ import MeetTheTeam from "./components/MeetTheTeam";
 import OurExcellence from "./components/OurExcellence";
 import Showcase from "./components/showcase";
 import Form from "./components/form";
+import Footer from "./components/footer";
 
 
 const page = () => {
@@ -18,6 +19,7 @@ const page = () => {
       <OurExcellence />
       <Showcase />
       <Form />
+      <Footer />
     </div>
   );
 };
