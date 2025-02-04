@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 body {
-  background: black;
+  background: black url("/bg.png") no-repeat center center;
+  background-size: cover;
 }
+
 @font-face {
   font-family: "Object Sans";
   src: url("/ObjectSans-Regular.otf") format("opentype");
@@ -33,14 +35,13 @@ body {
   animation: scroll 15s linear infinite;
 }
 
-
 .tilted-div {
   transform: rotate(-4.5deg);
-  transform-origin: center; 
+  transform-origin: center;
 }
 .tilted-text {
   transform: rotate(-2.25deg);
-  transform-origin: center; 
+  transform-origin: center;
 }
 @layer utilities {
   .scrollbar-hide-x {
