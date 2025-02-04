@@ -26,8 +26,8 @@ const Showcase = () => {
         <BannerList />
       </div>
       {/* red text */}
-      <div className="mt-[72px] mx-[174px]">
-        <div className="relative mx-[186px]">
+      <div className="mt-[72px] lg:mx-[174px] mx-5">
+        <div className="relative lg:mx-[186px] mx-5">
           <p className="text-[#EB4545] font-[Comedik] text-[40px] font-normal leading-[37.13px] relative tilted-text">
             WE JUST THINK OF MONEY
             <br /> NO KID FUTURE HERE
@@ -61,7 +61,7 @@ const Showcase = () => {
             </svg>
           </div>
         </div>
-        <div className="mx-[186px] mt-7 flex gap-[22.13px]">
+        <div className="lg:mx-[186px] mx-5 mt-7 flex gap-[22.13px]">
           <div className="flex ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -87,25 +87,23 @@ const Showcase = () => {
       </div>
 
       {/* We have  */}
-      <div className="mx-[193px] mt-[64px] flex gap-6 relative">
-        <p className="text-[#00A9CF] font-[SCHABO] text-[108px] font-normal leading-[97.2px] uppercase ">
+      <div className="lg:mx-[193px] mt-[106px] lg:mt-[64px] flex gap-6 relative justify-center lg:justify-start">
+        <p className="text-[#00A9CF] font-[SCHABO] text-[30px] lg:text-[108px]  font-normal leading-[97.2px] uppercase z-50">
           We have team for
         </p>
-        <div className="absolute -top-24 right-[350px] ">
+        <div className="absolute lg:-top-24 lg:right-[350px] ">
           <motion.div
             key={index}
-            className="relative text-[#00A9CF] font-[SCHABO] text-[108px] font-normal leading-[97.2px] uppercase flex flex-col"
+            className="relative text-[#00A9CF] font-[SCHABO] text-[100px] lg:text-[108px] font-normal leading-[97.2px] uppercase flex flex-col"
           >
-            {/* Background gradient layer */}
             <div
-              className="absolute -top-2 left-0 w-full h-full"
+              className="absolute -top-1 lg:-top-2 lg:left-0 w-full h-full"
               style={{
                 background:
                   "linear-gradient(180deg, #000000 16.6%, rgba(0, 0, 0, 0.00) 42.3%, rgba(0, 0, 0, 0.00) 60.98%, #000000 86.68%)",
                 zIndex: 1,
               }}
             />
-            {/* Text content */}
             {texts.texts1[index]} <br />
             {texts.texts2[index]} <br />
             {texts.texts3[index]}
@@ -115,13 +113,13 @@ const Showcase = () => {
 
       {/* Green Text  */}
       <div className="relative">
-        <div className="absolute top-16 right-80 z-10 tilted-text">
+        <div className="absolute lg:top-16 lg:right-80 -bottom-[300px] right-0 z-10 tilted-text">
           <p className=" text-[#00CF78] font-[Comedik] text-[41.3px] font-normal leading-[37.13px] ">
             And that&apos;s why <br />
             we are the best
           </p>
         </div>
-        <div className="absolute top-32 right-[570px] z-20 tilted-text">
+        <div className="absolute lg:top-32 lg:right-[570px]  -bottom-[300px] right-[250px] z-20 tilted-text">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="10"

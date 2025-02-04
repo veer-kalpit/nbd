@@ -2,7 +2,7 @@ import React from "react";
 
 export default function KickoffForm() {
   return (
-    <div className="mt-[300px] lg:mx-[174px] mx-5">
+    <div className="mt-[350px] lg:mx-[174px] mx-5">
       <div className="flex lg:flex-row flex-col mx-10 lg:mx-0">
         <div className="lg:mr-[98.93px] lg:ml-[39.07px] hidden lg:block">
           <svg
@@ -20,8 +20,8 @@ export default function KickoffForm() {
         </div>
         <div>
           <h1 className="text-[#B5F1FF] font-schabo text-[105px] leading-[94.5px] uppercase flex z-30 relative">
-            READY TO <br /> KICKOFF
-            <span className="mt-[82px] -ml-[45px]">
+            READY TO  KICKOFF
+            <span className="mt-[82px] -ml-[290px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="90"
