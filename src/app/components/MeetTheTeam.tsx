@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import ArrowL from "../../../public/arrowR.png";
 import ArrowR from "../../../public/Container.png";
+import RakeshM from "../../../public/RakeshM.png";
 
 const TeamPage = () => {
   const teamMembers = [
@@ -12,7 +13,7 @@ const TeamPage = () => {
       name: "Rakesh Shankar Karmaran",
       role: "Coach",
       image: "/Rakesh.png",
-      imageM: "/RakeshM.png",
+      imageM: RakeshM,
       bio: `At Never Back Down Football Club, our vision transcends the boundaries of the field, aiming to create a dynamic and inclusive environment where the love for football flourishes. Having actively participated in Mumbai FC, our team has weathered both triumphs and setbacks. Guided by a coach who also serves as a teacher at Ameya Club, we have taken a brief hiatus to delve into global athletics over the past three to four years.`,
     },
     {
@@ -20,7 +21,7 @@ const TeamPage = () => {
       name: "John Doe",
       role: "Forward",
       image: "/T2.png",
-      imageM: "/RakeshM.png",
+      imageM:  RakeshM ,
       bio: `John is a dynamic forward with an incredible ability to score goals under pressure. Having played for several local clubs, his passion and energy on the field inspire his teammates.`,
     },
     {
@@ -28,7 +29,7 @@ const TeamPage = () => {
       name: "Jane Smith",
       role: "Goalkeeper",
       image: "/T3.png",
-      imageM: "/RakeshM.png",
+      imageM:  RakeshM ,
       bio: `Jane is a skilled goalkeeper with a record of saving crucial penalties. Her dedication and strategic thinking make her a pillar of strength for the team.`,
     },
     {
@@ -36,7 +37,7 @@ const TeamPage = () => {
       name: "Alex Brown",
       role: "Defender",
       image: "/T4.png",
-      imageM: "/RakeshM.png",
+      imageM:  RakeshM ,
       bio: `Alex's defensive prowess and tactical acumen ensure the team's stability. With years of experience, he is known for his unwavering determination.`,
     },
   ];
