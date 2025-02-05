@@ -4,14 +4,14 @@ import Logo from "../../../public/Footer Logo.png";
 
 const footer = () => {
   return (
-    <div className="lg:h-[652px] h-[794px] bg-[#B5F1FF]">
+    <div className="lg:h-[652px] h-[794px] bg-[#B5F1FF] flex ">
       <div className="lg:px-[165px] lg:py-[74px]  px-5 py-[48px]">
-        <div className=" flex lg:ml-[180px] lg:mr-[338px] justify-between">
+        <div className=" flex lg:ml-[180px] lg:mr-[338px]  lg:gap-[205px] justify-between">
           <div>
             <h1 className="text-[#020037] font-objectSans font-extrabold text-[29.883px] leading-[37.5px]">
               Contact
             </h1>
-            <p className="text-[#020037] font-objectSans font-normal text-[16px] leading-[23.94px] mt-3 w-[220px] lg:w-full">
+            <p className="text-[#020037] font-objectSans font-normal text-[16px] leading-[23.94px] mt-3 w-[220px] lg:w-[403.956px]">
               Sign me up for the newsletter so i&lsquo;ll receive <br />
               gear-saving and planet-friendly news.
             </p>
@@ -19,7 +19,7 @@ const footer = () => {
               <input
                 type="text"
                 placeholder="shirt_lovr88@example.com"
-                className="uppercase bg-transparent z-10 absolute top-[40px] left-[10px]  lg:w-[400px] text-[#111] text-[19.611px] font-normal lg:text-[26.3px] leading-normal "
+                className="uppercase bg-transparent z-10 absolute top-[40px] font-comedik left-[10px]  lg:w-[400px] text-[#111] text-[19.611px] font-normal lg:text-[26.3px] leading-normal "
               />
               <span className="absolute left-0 top-[25.92px] flex">
                 <svg

@@ -131,7 +131,7 @@ const Faq = () => {
                           />
                         </svg>
                         <div className="absolute top-4 right-4 gap-1 flex flex-row justify-center tilted-text ">
-                          <p className="text-[#020037]  text-[26.3px] not-italic font-normal leading-[23.63px]">
+                          <p className="text-[#020037] font-comedik text-[26.3px] not-italic font-normal leading-[23.63px]">
                             Less Info
                           </p>
                           <svg
@@ -163,7 +163,7 @@ const Faq = () => {
                           />
                         </svg>
                         <div className=" absolute top-4 right-2 gap-1 flex flex-row justify-center tilted-text">
-                          <p className="text-[#020037] text-[26.3px] not-italic font-normal leading-[23.63px]">
+                          <p className="text-[#020037] text-[26.3px] font-comedik not-italic font-normal leading-[23.63px]">
                             More Info
                           </p>
                           <svg

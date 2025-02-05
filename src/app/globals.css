@@ -13,6 +13,12 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Comedik";
+  src: url("/Comedik.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "SCHABO";
@@ -20,19 +26,19 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-
 @keyframes scroll {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
+  to {
     transform: translateX(-50%);
   }
 }
 
 .animate-scroll {
   display: flex;
-  animation: scroll 15s linear infinite;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
 }
 
 .tilted-div {

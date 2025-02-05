@@ -32,7 +32,7 @@ const Showcase = () => {
             WE JUST THINK OF MONEY
             <br /> NO KID FUTURE HERE
           </p>
-          <div className="absolute top-5 left-1">
+          <div className="absolute lg:top-7 lg:left-0 bottom-[40px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="356"
@@ -46,7 +46,7 @@ const Showcase = () => {
               />
             </svg>
           </div>
-          <div className="absolute bottom-0 ">
+          <div className="absolute  lg:-bottom-2 bottom-2 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="313"
@@ -61,7 +61,7 @@ const Showcase = () => {
             </svg>
           </div>
         </div>
-        <div className="lg:mx-[186px] mx-5 mt-7 flex gap-[22.13px]">
+        <div className="lg:mx-[186px] mx-5 mt-10 flex gap-[22.13px]">
           <div className="flex ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +91,7 @@ const Showcase = () => {
         <p className="text-[#00A9CF] font-[SCHABO] text-[30px] lg:text-[108px]  font-normal leading-[97.2px] uppercase z-50">
           We have team for
         </p>
-        <div className="absolute lg:-top-24 lg:right-[350px] ">
+        <div className="absolute lg:-top-24 lg:left-[568.02px] ">
           <motion.div
             key={index}
             className="relative text-[#00A9CF] font-[SCHABO] text-[100px] lg:text-[108px] font-normal leading-[97.2px] uppercase flex flex-col"
@@ -133,7 +133,7 @@ const Showcase = () => {
             />
           </svg>
         </div>
-        <div className="absolute top-36 right-[440px] tilted-text hidden lg:block">
+        <div className="absolute lg:top-36 lg:right-[440px] right-24 top-[310px] tilted-text">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="77"

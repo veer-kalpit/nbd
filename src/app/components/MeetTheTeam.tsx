@@ -265,7 +265,7 @@ const TeamPage = () => {
           className="rounded-lg"
         />
         <div>
-          <h2 className="text-[40px] text-[#00A9CF] font-normal leading-[37.13px] text-center lg:text-left">
+          <h2 className="text-[40px] font-comedik text-[#00A9CF] font-normal leading-[37.13px] text-center lg:text-left">
             HELLO, I&apos;M
           </h2>
           <h1 className="lg:text-[60px] text-[30px] text-[#B5F1FF] font-schabo font-normal uppercase text-center lg:text-left">
@@ -288,7 +288,7 @@ const TeamPage = () => {
               />
             </svg>
             {/* Connect Role */}
-            <button className="absolute top-1 flex text-[#020037] font-comedik text-[15px] font-normal leading-[23.63px] py-[17px] left-6 gap-2">
+            <button className="absolute top-1 flex text-[#020037] font-comedik text-[26px] font-normal leading-[23.63px] py-[17px] lg:left-8 gap-2 left-20 tilted-text">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

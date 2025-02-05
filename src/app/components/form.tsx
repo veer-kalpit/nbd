@@ -2,7 +2,7 @@ import React from "react";
 
 export default function KickoffForm() {
   return (
-    <div className="mt-[350px] lg:mx-[174px] lg:mb-[122px] mb-[33.51px] mx-5">
+    <div className="mt-[450px] lg:mt-[350px] lg:mx-[174px] lg:mb-[122px] mb-[33.51px] mx-5">
       <div className="flex lg:flex-row flex-col mx-10 lg:mx-0">
         <div className="lg:mr-[98.93px] lg:ml-[39.07px] hidden lg:block">
           <svg
@@ -20,8 +20,9 @@ export default function KickoffForm() {
         </div>
         <div>
           <h1 className="text-[#B5F1FF] font-schabo text-[105px] leading-[94.5px] uppercase flex z-30 relative">
-            READY TO KICKOFF
-            <span className="mt-[82px]  absolute right-0 lg:right-[120px]">
+            READY TO <br />
+            KICKOFF
+            <span className="mt-[82px]  absolute right-0 lg:-right-[50px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="90"
@@ -66,12 +67,12 @@ export default function KickoffForm() {
           </h1>
         </div>
         <div className="lg:ml-[238px]">
-          <p className="text-[#B5F1FF] font-comedik text-[30px] leading-[30.43px] ">
+          <p className="text-[#00A9CF] font-comedik text-[30px] leading-[30.43px] w-[213px] tilted-text">
             WE AIM TO PROVIDE PERSONALIZED INFO AND DETAILS,
           </p>
           <div className="flex">
             <div>
-              <p className="text-[#B5F1FF] font-comedik text-[30px] leading-[30.43px] mt-5">
+              <p className="text-[#00A9CF] font-comedik text-[60px] leading-[30.43px] mt-5 flex  flex-col gap-2">
                 Let&apos;s Meet!
                 <span>
                   <svg

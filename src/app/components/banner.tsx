@@ -32,21 +32,21 @@ export default function Home() {
   //     setAnimation("animate__backInDown"); // Entry animation
   //   }, 500); // Matches Animate.css fade-out duration
   // };
-   useEffect(() => {
-     const interval = setInterval(() => {
-       setAnimation("animate__backOutUp"); // Exit animation
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimation("animate__backOutUp"); // Exit animation
 
-       setTimeout(() => {
-         setCurrentIndex((prevIndex) => (prevIndex + 1) % bannerData.length);
-         setAnimation("animate__backInUp"); // Entry animation
-       }, 500); // Match this timeout with animation duration
-     }, 3000); // Change image every 3 seconds
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % bannerData.length);
+        setAnimation("animate__backInUp"); // Entry animation
+      }, 500); // Match this timeout with animation duration
+    }, 3000); // Change image every 3 seconds
 
-     return () => clearInterval(interval); // Cleanup interval on component unmount
-   }, [currentIndex]);
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, [currentIndex]);
 
   return (
-    <div className="flex flex-col lg:flex-row gap-10 lg:gap-[50px] mx-5 lg:mx-[163px] mt-10 lg:mt-[150px] bg-cover bg-center justify-center">
+    <div className="flex flex-col lg:flex-row gap-10 lg:gap-[50px] mx-5 lg:mx-[171px] mt-10 lg:mt-[150px] bg-cover bg-center justify-center">
       {/* <button
         onClick={handlePrev}
         className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 hover:bg-gray-700 text-white px-3 py-2 rounded-full"
@@ -54,7 +54,7 @@ export default function Home() {
         &lt;
       </button> */}
       {/* Image Section */}
-      <div className="relative  lg:w-[683.099px] h-[227.728px] w-full lg:h-[455.455px] overflow-hidden">
+      <div className="relative  lg:w-[683.099px] lg:h-[455.455px] w-full overflow-hidden">
         <Image src={BgGroup} alt="Background Group" />
 
         <div
@@ -64,7 +64,7 @@ export default function Home() {
           <Image
             src={bannerData[currentIndex].img}
             alt={`Banner Image ${currentIndex + 1}`}
-            width={683} // Adjust dimensions as necessary
+            width={683}
             height={455}
           />
         </div>
@@ -74,9 +74,7 @@ export default function Home() {
       <div className="flex flex-col gap-5 lg:gap-[50px] w-auto lg:w-[359px]">
         <div>
           <h1 className="text-[#B5F1FF] font-schabo text-[30px] text-center lg:text-left lg:text-[60px] font-normal uppercase">
-            &quot;Fueling Dreams,
-            Building Champions,
-            One Goal at a Time.&quot;
+            &quot;Fueling Dreams, Building Champions, One Goal at a Time.&quot;
           </h1>
           <p className="text-[#00A9CF] font-comedik text-[16px] lg:text-[18px] mt-5 text-quote text-center lg:text-left">
             Join our academy today and take the first step <br /> toward your
