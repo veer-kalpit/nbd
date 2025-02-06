@@ -9,8 +9,14 @@ body {
 
 @font-face {
   font-family: "Object Sans";
+  src: url("/ObjectSans-Heavy.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Object Sans";
   src: url("/ObjectSans-Regular.otf") format("opentype");
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
@@ -46,7 +52,11 @@ body {
   transform-origin: center;
 }
 .tilted-text {
-  transform: rotate(-2.25deg);
+  transform: rotate(-2deg);
+  transform-origin: center;
+}
+.tilted-textG {
+  transform: rotate(-8deg);
   transform-origin: center;
 }
 @layer utilities {

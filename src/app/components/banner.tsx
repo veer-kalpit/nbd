@@ -98,7 +98,7 @@ export default function Home() {
                 fill="#00A9CF"
               />
             </svg>
-            <div className="absolute text-[#020037] font-comedik text-[26px] font-normal leading-[23.63px] flex gap-2 self-center justify-center text-center items-center">
+            <div className="absolute text-[#020037] font-comedik text-[26px] font-normal leading-[23.63px] flex gap-2 self-center justify-center text-center items-center tilted-text">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="38"
@@ -118,7 +118,7 @@ export default function Home() {
               Join Now
             </div>
           </div>
-          <div className="flex flex-row gap-[94px]">
+          <div className="flex flex-row gap-[94px] justify-center">
             <p className="text-center text-[#B5F1FF] font-object-sans text-[15px] font-extrabold leading-[22.5px]">
               and start winning!
             </p>

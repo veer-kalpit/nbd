@@ -288,7 +288,7 @@ const TeamPage = () => {
               />
             </svg>
             {/* Connect Role */}
-            <button className="absolute top-1 flex text-[#020037] font-comedik text-[26px] font-normal leading-[23.63px] py-[17px] lg:left-8 gap-2 left-20 tilted-text">
+            <button className="absolute top-0 flex text-[#020037] font-comedik text-[26px] font-normal leading-[23.63px] py-[17px] lg:left-8 gap-3 left-20 tilted-text">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

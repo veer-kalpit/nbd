@@ -4,7 +4,7 @@ import Logo from "../../../public/Footer Logo.png";
 
 const footer = () => {
   return (
-    <div className="lg:h-[652px] h-[794px] bg-[#B5F1FF] flex ">
+    <div className="lg:h-[652px] h-[794px] bg-[#B5F1FF] flex justify-center ">
       <div className="lg:px-[165px] lg:py-[74px]  px-5 py-[48px]">
         <div className=" flex lg:ml-[180px] lg:mr-[338px]  lg:gap-[205px] justify-between">
           <div>
@@ -131,9 +131,9 @@ const footer = () => {
             <h1 className="text-[#020037] font-objectSans font-extrabold text-[18.8px] leading-[18.75px] uppercase">
               Other
             </h1>
-            <p className="text-[#020037] font-objectSans font-normal text-[15px] leading-[22.5px] lg:w-[206px] w-full">
+            <p className="text-[#020037] font-objectSans font-normal text-[15px] leading-[22.5px]  w-full">
               Shubham Naik  +91 70285 86973 <br />
-              Himesh Pandey +91 9175674302
+              Himesh Pandey +91 91756 74302
             </p>
           </div>
         </div>

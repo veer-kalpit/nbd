@@ -67,9 +67,14 @@ const Faq = () => {
 
   return (
     <section className="flex mx-5 lg:mx-[173px] flex-col mt-[120px] lg:mt-[276px] mb-20">
-      <h2 className="text-[#00A9CF] font-schabo text-[30px] lg:text-[60px] font-normal uppercase ">
-        NBD FC: Always Striving, Never Giving Up.
-      </h2>
+      <div className="relative">
+        <p className="text-[#B5F1FF] font-comedik text-[20px] lg:text-[40px] not-italic font-normal leading-[37.13px] tilted-textG absolute lg:-top-11 lg:-left-16 -top-10 -left-4">
+          our excellence
+        </p>
+        <h2 className="text-[#00A9CF] font-schabo text-[30px] lg:text-[60px] font-normal uppercase ">
+          NBD FC: Always Striving, Never Giving Up.
+        </h2>
+      </div>
 
       {FAQData.map((item, index) => (
         <Disclosure key={index}>

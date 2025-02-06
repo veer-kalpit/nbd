@@ -7,15 +7,31 @@ import AboutB from "./About-button";
 
 const AboutUsSection = () => {
   return (
-    <section className=" text-white mx-5 lg:mx-[163px] relative flex flex-col justify-center items-center lg:mt-[176px] gap-12">
+    <section className=" text-white mx-5  mt-[98.5px]  lg:mx-[163px] relative flex flex-col justify-center items-center lg:mt-[176px] gap-12">
       {/* Left Section */}
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-[68px]">
-        <div className="w-[39px] h-[39px] mt-[98.5px]  g:mt-[50px]">
+        <div className="w-[39px] h-[39px] lg:mt-[50px] lg:block hidden ">
           <Image src={Arrow} alt="Button" />
         </div>
 
-        <p className="text-lightBlue font-objectSans text-base lg:w-[702px]">
-          
+        <p className="text-lightBlue font-objectSans text-base lg:w-[702px] lg:h-[149px] self-center">
+          <span className="inline-block align-middle mr-4 lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 39 39"
+              fill="none"
+              className="h-[29px] w-[29px] inline"
+            >
+              <path
+                d="M37.0629 15.4328L37.062 15.4272L37.0611 15.4216C35.8838 8.15189 30.2865 3.08292 23.156 2.19663C16.191 0.82794 9.67044 3.04692 5.42601 8.98288C2.29318 13.1105 0.632865 19.2592 2.75878 24.3527C3.34216 27.8534 5.30258 31.0268 8.32104 33.2797C12.9726 37.2804 18.8109 38.4095 24.5025 35.7614C28.0095 34.2511 31.3018 31.181 32.5365 27.3611C35.6447 24.3407 37.7528 19.9941 37.0629 15.4328Z"
+                fill="#B5F1FF"
+              />
+              <path
+                d="M10.8032 19.62C13.2875 19.661 16.7344 19.6856 22.9434 19.6101C20.6766 20.7499 18.6352 22.3002 16.9485 24.2119C16.3879 24.7702 16.3765 25.7425 16.9485 26.2976C17.2215 26.5834 17.6006 26.7246 17.9815 26.7246C18.3639 26.7246 18.7479 26.5817 19.0242 26.2976C19.2939 26.0381 19.5651 25.7803 19.8431 25.529C21.4202 24.1938 23.1641 23.0524 24.9995 22.1064C25.5961 21.8092 26.1991 21.53 26.8072 21.2607C27.8417 20.7515 29.3601 20.3787 29.5954 19.0681C29.749 17.9876 28.8174 17.3602 27.8646 17.2304C27.304 17.1007 26.7565 16.9447 26.2122 16.7591C24.1643 16.0019 22.1311 15.1874 20.1715 14.2168C18.475 13.4186 16.9289 12.3052 15.2128 11.5596C14.9382 11.5185 14.7797 11.8108 14.7797 12.0489C14.8108 12.9112 15.3615 13.6518 15.8944 14.2907C17.0417 15.4879 18.3901 16.4815 19.8397 17.301L10.9193 16.7328C10.0727 16.6769 9.36498 17.3651 9.38954 18.2174C9.41236 18.9893 10.0351 19.6068 10.8032 19.62Z"
+                fill="#00A9CF"
+              />
+            </svg>
+          </span>
           Established in 2011, our club embodies resilience, with a primary
           mission to compete at national and India levels, providing a platform
           for players to showcase their talents. Several players have
@@ -48,15 +64,53 @@ const AboutUsSection = () => {
 
       {/* Right Section */}
       <div className="flex flex-col-reverse lg:flex-row gap-5 lg:gap-[68px]">
-        <div className="relative w-[295.396px] h-[420px] self-center">
+        <div className="relative w-[295.396px] h-[420px] self-center ">
           <Image src={BgGoku} alt="Goku" />
           <div className="absolute top-1">
             <Image src={Goku} alt="Goku" />
           </div>
+          <div className="absolute -right-4 lg:bottom-12 lg:-right-48 tilted-textG">
+            <p className="text-[#00A9CF] font-[Comedik] text-[40px] font-normal leading-[37.13px] w-full ">
+              EAT-train-repeat
+              <br />
+              Suiiiiiiiiiiiiiiii
+            </p>
+          </div>
+          <span className="absolute lg:-right-16 lg:bottom-5 right-20 -bottom-[90px]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="77"
+              height="22"
+              viewBox="0 0 77 22"
+              fill="none"
+            >
+              <path
+                d="M1.70386 19.7489C1.70386 19.7489 1.70386 19.7489 1.70231 19.7491C1.72423 19.453 1.88003 19.304 1.97191 19.1033C2.46053 18.3666 3.06259 17.9135 3.65118 17.4655C4.48411 16.8593 5.34069 16.3326 6.2119 15.8772C9.68354 14.1083 13.279 12.9019 16.8837 11.7962C24.3153 9.70993 31.8848 8.48048 39.4019 6.93022C44.9043 5.72662 50.412 4.54775 55.9945 3.8968C61.8121 3.30558 67.6634 2.9677 73.5064 2.60548C75.4839 2.44555 76.3273 8.24662 74.349 8.6742C72.5605 8.9353 70.7533 9.04926 68.9498 9.19143C65.194 9.4581 61.4276 9.63709 57.6869 10.0259C48.3435 11.1004 39.2013 13.542 29.9333 15.1251C21.3231 16.5087 12.9431 19.3573 4.35185 20.8433C3.84721 20.8178 1.6729 21.4892 1.70473 19.7552L1.70386 19.7489Z"
+                fill="#73836F"
+              />
+            </svg>
+          </span>
         </div>
         <div className="self-center">
           <div className="flex">
             <p className="text-lightBlue font-objectSans text-base lg:w-[702px] lg:h-[149px] self-center">
+              <span className="inline-block align-middle mr-4 lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 39 39"
+                  fill="none"
+                  className="h-[29px] w-[29px] inline"
+                >
+                  <path
+                    d="M37.0629 15.4328L37.062 15.4272L37.0611 15.4216C35.8838 8.15189 30.2865 3.08292 23.156 2.19663C16.191 0.82794 9.67044 3.04692 5.42601 8.98288C2.29318 13.1105 0.632865 19.2592 2.75878 24.3527C3.34216 27.8534 5.30258 31.0268 8.32104 33.2797C12.9726 37.2804 18.8109 38.4095 24.5025 35.7614C28.0095 34.2511 31.3018 31.181 32.5365 27.3611C35.6447 24.3407 37.7528 19.9941 37.0629 15.4328Z"
+                    fill="#B5F1FF"
+                  />
+                  <path
+                    d="M10.8032 19.62C13.2875 19.661 16.7344 19.6856 22.9434 19.6101C20.6766 20.7499 18.6352 22.3002 16.9485 24.2119C16.3879 24.7702 16.3765 25.7425 16.9485 26.2976C17.2215 26.5834 17.6006 26.7246 17.9815 26.7246C18.3639 26.7246 18.7479 26.5817 19.0242 26.2976C19.2939 26.0381 19.5651 25.7803 19.8431 25.529C21.4202 24.1938 23.1641 23.0524 24.9995 22.1064C25.5961 21.8092 26.1991 21.53 26.8072 21.2607C27.8417 20.7515 29.3601 20.3787 29.5954 19.0681C29.749 17.9876 28.8174 17.3602 27.8646 17.2304C27.304 17.1007 26.7565 16.9447 26.2122 16.7591C24.1643 16.0019 22.1311 15.1874 20.1715 14.2168C18.475 13.4186 16.9289 12.3052 15.2128 11.5596C14.9382 11.5185 14.7797 11.8108 14.7797 12.0489C14.8108 12.9112 15.3615 13.6518 15.8944 14.2907C17.0417 15.4879 18.3901 16.4815 19.8397 17.301L10.9193 16.7328C10.0727 16.6769 9.36498 17.3651 9.38954 18.2174C9.41236 18.9893 10.0351 19.6068 10.8032 19.62Z"
+                    fill="#00A9CF"
+                  />
+                </svg>
+              </span>{" "}
               At Never Back Down Football Club, our vision transcends the
               boundaries of the field, aiming to create a dynamic and inclusive
               environment where the love for football flourishes. Having
@@ -70,7 +124,7 @@ const AboutUsSection = () => {
             <AboutB />
           </div>
         </div>
-        <div className="lg:mt-[143px]">
+        <div className="lg:mt-[143px] lg:block hidden">
           <Image src={ArrowR} alt="arrow" />
         </div>
       </div>

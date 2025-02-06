@@ -15,7 +15,7 @@ const AboutB = () => {
           fill="#00A9CF"
         />
       </svg>
-      <div className="absolute text-[#020037] font-comedik text-[26px] font-normal leading-[23.63px] flex ">
+      <div className="absolute text-[#020037] font-comedik text-[26px] font-normal leading-[23.63px] flex gap-3 tilted-text">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="38"
