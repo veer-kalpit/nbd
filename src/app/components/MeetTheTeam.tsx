@@ -149,7 +149,7 @@ const TeamPage = () => {
 
         {/* Profile Navigation */}
         <div className="flex flex-row items-center gap-5 lg:gap-[59px]">
-          <button onClick={handlePrev}>
+          <button onClick={handlePrev} title="Previous">
             <Image src={ArrowL} alt="Arrow" />
           </button>
           <div className="flex gap-6 lg:gap-[87px]">
@@ -249,7 +249,7 @@ const TeamPage = () => {
               </div>
             ))}
           </div>
-          <button onClick={handleNext}>
+          <button onClick={handleNext} title="Next">
             <Image src={ArrowR} alt="Arrow" />
           </button>
         </div>

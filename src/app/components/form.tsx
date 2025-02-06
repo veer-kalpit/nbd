@@ -2,7 +2,7 @@ import React from "react";
 
 export default function KickoffForm() {
   return (
-    <div className="mt-[450px] lg:mt-[350px] lg:mx-[174px] lg:mb-[122px] mb-[33.51px] mx-5">
+    <div className="mt-[450px] lg:mt-[350px] lg:mx-[174px] lg:mb-[122px] mb-[33.51px] ">
       <div className="flex lg:flex-row flex-col mx-10 lg:mx-0">
         <div className="lg:mr-[98.93px] lg:ml-[39.07px] hidden lg:block">
           <svg
@@ -66,13 +66,13 @@ export default function KickoffForm() {
             </span>
           </h1>
         </div>
-        <div className="lg:ml-[238px]">
-          <p className="text-[#00A9CF] font-comedik text-[30px] leading-[30.43px] w-[213px] tilted-text">
+        <div className="lg:ml-[238px] mt-[30px] lg:mt-0">
+          <p className="text-[#00A9CF] font-comedik text-[30px] leading-[30.43px] lg:w-[213px] tilted-text w-full tilted-text">
             WE AIM TO PROVIDE PERSONALIZED INFO AND DETAILS,
           </p>
           <div className="flex">
             <div>
-              <p className="text-[#00A9CF] font-comedik text-[60px] leading-[30.43px] mt-5 flex  flex-col gap-2">
+              <p className="text-[#00A9CF] items-center justify-center font-comedik text-[60px] leading-[30.43px] lg:mt-[90px] mt-[50px] flex  flex-col gap-2">
                 Let&apos;s Meet!
                 <span>
                   <svg
@@ -124,7 +124,7 @@ export default function KickoffForm() {
         </div>
       </div>
       {/* Form For Lappy */}
-      <form className="lg:mx-[180px] mt-[53px] hidden lg:block ">
+      <form className="lg:mx-[180px] mt-[80px] lg:mt-[53px] hidden lg:block ">
         <div className="space-y-6">
           <div className="flex space-x-2">
             <label
