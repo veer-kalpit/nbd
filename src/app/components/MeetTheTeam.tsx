@@ -1,5 +1,7 @@
 "use client";
 
+import {  Zoom } from "react-awesome-reveal";
+
 import { useState } from "react";
 import Image from "next/image";
 import ArrowL from "../../../public/arrowR.png";
@@ -274,7 +276,7 @@ const TeamPage = () => {
           <p className="text-[#B5F1FF] font-object-sans text-[16.5px] font-normal leading-[24.75px] mt-[32px] lg:mt-[50px] text-center lg:text-left">
             {currentMember.bio}
           </p>
-          <div className="relative lg:mt-[60px] mt-[49px] self-center lg:justify-start flex justify-center">
+          <Zoom><div className="relative lg:mt-[60px] mt-[49px] self-center lg:justify-start flex justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="299"
@@ -288,6 +290,7 @@ const TeamPage = () => {
               />
             </svg>
             {/* Connect Role */}
+          
             <button className="absolute top-0 flex text-[#020037] font-comedik text-[26px] font-normal leading-[23.63px] py-[17px] lg:left-8 gap-3 left-20 tilted-text">
               <span>
                 <svg
@@ -309,7 +312,8 @@ const TeamPage = () => {
               </span>
               CONNECT WITH {currentMember.role.toUpperCase()}
             </button>
-          </div>
+          </div></Zoom>
+          
         </div>
       </section>
     </div>
