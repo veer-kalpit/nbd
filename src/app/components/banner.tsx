@@ -34,11 +34,11 @@ export default function Home() {
   // };
   useEffect(() => {
     const interval = setInterval(() => {
-      setAnimation("animate__backOutUp"); // Exit animation
+      setAnimation("animate__backOutRight"); // Exit animation
 
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % bannerData.length);
-        setAnimation("animate__backInUp"); // Entry animation
+        setAnimation("animate__backInLeft"); // Entry animation
       }, 500); // Match this timeout with animation duration
     }, 3000); // Change image every 3 seconds
 
